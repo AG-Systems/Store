@@ -1,10 +1,12 @@
 class ChargesController < ApplicationController
 def new
+  @product = Proudct.find(params[:id])
 end
 
 def create
   # Amount in cents
-  @product = Product.find(1)
+  #@product = Product.find(params[:id])
+  @product = Product.find_by_id(session[:productid])
   @amount = (Integer(@product.price) * 100)
   
   customer = Stripe::Customer.create(
