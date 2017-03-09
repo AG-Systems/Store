@@ -12,8 +12,19 @@
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="Purchase parking spot"
+          data-description="<%= @product.title %>"
           data-amount="<%= @product.price * 100 %> "
-          data-locale="auto"></script>
+          data-locale="auto"
+          data-billing-address="true"
+          data-name="Blackdistressed"
+          data-zip-code="true"
+          data-image="http://i.imgur.com/9q9WhBF.png"
+          ></script>
 <% end %>
 
+<style>
+  .amount
+  {
+    font-size: 20px;
+  }
+</style>

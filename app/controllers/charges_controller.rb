@@ -1,6 +1,6 @@
 class ChargesController < ApplicationController
 def new
-  @product = Proudct.find(params[:id])
+ # @product = Proudct.find(params[:id])
 end
 
 def create

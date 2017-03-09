@@ -13,8 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 .main {
-  padding-top: 100px;
+  padding-top: 50px;
   width: 90%;
   margin: 0 auto;
 }
@@ -25,4 +27,16 @@
 
 .logo {
   width: 100%;
+}
+
+#logo-pic
+{
+  background-image: url("http://www.morrell-middleton.co.uk/wp-content/uploads/logo-placeholder.jpg");
+  width: 450px;
+  height: 200px;
+  margin: 0 auto;
+}
+.img-responsive
+{
+  margin: 0 auto;
 }

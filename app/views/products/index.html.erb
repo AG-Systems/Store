@@ -1,11 +1,14 @@
-<div class="flex one three-1000">
-  <% @products.each do |product| %>
-    <article class="card">
-      <img src="<%= product.picture %>">
-      <footer>
+<div class="row">
+<% @products.each do |product| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="<%= product.picture %>" alt="...">
+      <div class="caption">
         <h3><%= product.title %></h3>
-        <%= link_to "Deets", product_path(product), class: "button" %>
-      </footer>
-    </article>
+        <h4>$<%= product.price %>0</h4>
+        <%= link_to "Details", product_path(product), class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
   <% end %>
 </div>
