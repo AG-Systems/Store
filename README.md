@@ -1,24 +1,10 @@
+# Store
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+1) Clone the repo: `git clone https://github.com/AG-Systems/store.git`
 
+2) Install the gems that you need: `bundle install`
 
-Welcome to your Rails project on Cloud9 IDE!
+3) To edit or add products, go to `cd db/seeds.rb`
 
-To get started, just do the following:
+4) Edit the stripe key so it you can receive payments `cd config/initializers/stripe.rb`
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://store-ag-systems-1.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
